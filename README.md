@@ -11,6 +11,14 @@
 * Configured to work with Netlify Only.
 * [Code of Conduct](https://github.com/ParveenBhadooOfficial/Jio-Saavn-Downloader/blob/master/CODE_OF_CONDUCT.md)
 
+## Coming Soon
+
+* Easy Caching of Paging using Cloudfront.
+* Multiple Quality.
+* Album Playing.
+* Playlists.
+* Easy Top Songs Category.
+
 ## Configured by
 
 * [TheFirstSpeedster](https://l.telegram.ind.in/TheFirstSpeedster)
