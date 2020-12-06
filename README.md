@@ -19,6 +19,15 @@
 * Playlists.
 * Easy Top Songs Category.
 
+## API Deployment
+
+* `sudo su`
+* `git clone https://github.com/cyberboysumanjay/JioSaavnAPI` [Source](https://github.com/cyberboysumanjay/JioSaavnAPI#installation)
+* `pip3 install -r requirements.txt`
+* `cd JioSaavnAPI`
+* `npm install forever -g`
+* `forever start -c python3 app.py` [Source](https://github.com/cyberboysumanjay/JioSaavnAPI/issues/17#issuecomment-696794077)
+
 ## Configured by
 
 * [TheFirstSpeedster](https://l.telegram.ind.in/TheFirstSpeedster)
