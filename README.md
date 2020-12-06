@@ -13,7 +13,7 @@
 
 ## Coming Soon
 
-* Easy Caching of Paging using Cloudfront.
+* Easy Caching of Pages using Cloudfront.
 * Multiple Quality.
 * Album Playing.
 * Playlists.
