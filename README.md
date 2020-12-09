@@ -30,6 +30,19 @@
 * `npm install forever -g`
 * `forever start -c python3 app.py` [Source](https://github.com/cyberboysumanjay/JioSaavnAPI/issues/17#issuecomment-696794077)
 
+## Credits
+
+* Internet and to all Developers.
+* [cyberboysumanjay](https://github.com/cyberboysumanjay) for [JioSaavnAPI](https://github.com/cyberboysumanjay/JioSaavnAPI)
+* GitHub for Hosting Code.
+* Netlify for their Generous Open-Source Plan.
+* JioSaavn for their extensive Music Library.
+* [Bootstrap](https://getbootstrap.com) for being Awesome.
+* [Cloudflare](https://cloudflare.com) for their free Plan.
+* [Canva](https://canva.com) for their Student Plan.
+* [Stackpath](https://stackpath.com) for their Free Bootstrap CDN.
+* [JSDelivr](https://jsdelivr.com) for their CDN.
+
 ## Configured by
 
 * [TheFirstSpeedster](https://l.telegram.ind.in/TheFirstSpeedster)
