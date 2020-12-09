@@ -18,6 +18,7 @@
 * Album Playing.
 * Playlists.
 * Easy Top Songs Category.
+* Make this site more customizable.
 
 ## API Deployment
 
