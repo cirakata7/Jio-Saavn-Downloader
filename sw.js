@@ -1,8 +1,8 @@
 'use strict';
 
 const cacheName = 'jiosaavnsw';
-const startPage = 'https://jiosaavn.ga';
-const offlinePage = 'https://jiosaavn.ga/offline.html';
+const startPage = 'https://bhadoomusic.com';
+const offlinePage = 'https://bhadoomusic.com/offline.html';
 const filesToCache = [
   ,
   offlinePage,
