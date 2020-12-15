@@ -1,10 +1,10 @@
 {
     "dir": "ltr",
     "lang": "English",
-    "name": "JioSaavn Pro",
+    "name": "Bhadoo Music",
     "scope": "/",
     "display": "fullscreen",
-    "start_url": "https://jiosaavn.ga",
+    "start_url": "https://bhadoomusic.com",
     "short_name": "JioSaavn Pro",
     "theme_color": "#63A3F2",
     "description": "Download JioSaavn Songs or Play Online. Enjoy Direct Access to Billions of songs and with no ads.",
