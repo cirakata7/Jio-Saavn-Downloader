@@ -19,7 +19,7 @@
          <div class="container min-height">
             <center><br><br><a href="/"><img src="/images/logo1x.png" alt="Bhadoo Music" width="208px"></a><br><br></center>
             <p id="status" class="center"></p>
-            <center><audio id='audioPlayer001' controls style="max-width: 100%" style='width: 100%; max-width:600px;' loop> <source src='/default/default.mp3' type='audio/mp3'> Your browser does not support the audio element. </audio></center>
+            <center><audio id='audioPlayer001' controls style="max-width: 100%" style='width: 100%; max-width:600px;' loop> <source src='' type='audio/mp3'> Your browser does not support the audio element. </audio></center>
             <form id="switch" action="/">
                <div id="input"></div>
             </form>
@@ -35,6 +35,13 @@
       </main>
       <script type="text/javascript">
          $('#audioPlayer001').mediaelementplayer();
+         var hsk = document.getElementById("audioPlayer001").src;
+         if (hsk.endsWith(".mp3") === false || hsk.endsWith(".mp4") === false){
+            hsk.style.display = "none";
+             }
+         else {
+            hsk.style.display = "block";
+         }
       </script>
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5edf8f288cd780a9"></script> 
    </body>
