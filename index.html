@@ -36,11 +36,12 @@
       <script type="text/javascript">
          $('#audioPlayer001').mediaelementplayer();
          var hsk = document.getElementById('audioPlayer001').src;
+         var hs = document.getElementById('audioPlayer001');
          if (hsk.endsWith('.mp3') === false || hsk.endsWith('.mp4') === false){
-            hsk.style.display = "none";
+            hs.style.display = "none";
              }
          else {
-            hsk.style.display = "block";
+            hs.style.display = "block";
          }
       </script>
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5edf8f288cd780a9"></script> 
