@@ -35,14 +35,18 @@
       </main>
       <script type="text/javascript">
          $('#audioPlayer001').mediaelementplayer();
+         document.getElementById('mep_0').style.display = "none";
+         function checkplayer() {
          var hsk = document.getElementById('audioPlayer001').src;
          var hs = document.getElementById('mep_0');
-         if (hsk.endsWith('.mp3') === false || hsk.endsWith('.mp4') === false){
-            hs.style.display = "none";
+         if (hsk.endsWith('.mp3') === true || hsk.endsWith('.mp4') === true){
+            hs.style.display = "block";
              }
          else {
-            hs.style.display = "block";
+            hs.style.display = "none";
          }
+         }
+         setTimeout(checkplayer, 5000);
       </script>
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5edf8f288cd780a9"></script> 
    </body>
