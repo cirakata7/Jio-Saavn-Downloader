@@ -40,6 +40,8 @@ if (surl == null) {
         if (this.readyState == 4 && this.status == 200) {
             var t = JSON.parse(this.responseText);
             var e = t.media_url;
+            var oimg = t.image;
+            var cdnimg = oimg.replace("https://", "https://i1.wp.com/");
             var oldurl = e.substring(e.indexOf("jio.com") + 7);
             var newurl = oldurl.replace("/", "https://");
             if (e == null) {
@@ -78,7 +80,7 @@ if (surl == null) {
                 document.title = t.song + " By " + t.singers + " - Bhadoo Music";
                 document.getElementById("input").innerHTML = "<input type='text' id='srcid' name='url' placeholder='Enter Song Name or JioSaavn Link' onfocus='this.value=\"\"' value='" + t.song + " By " + t.singers + "' autocomplete='off' required><input type='submit' value='Search'>";
                 document.getElementById("download").innerHTML = "<table class='table table-striped'> <thead> <tr> <th scope='col'>Name</th> <td>" + t.song + "</td> </tr> </thead> <tbody> <tr> <th scope='row'>Singer</th> <td>" + t.singers + "</td> </tr> <tr> <th scope='row'>Album</th> <td><a href='/album/?url=" + t.album_url + "'>" + t.album + "</a></td> </tr> <tr> <th scope='row'>Language</th> <td>" + t.language + "</td> </tr> <tr> <th scope='row'>Label</th> <td>" + t.label + "</td> </tr> </tbody> </table>"
-                document.getElementById("status").innerHTML = "<img src='" + t.image + "' width='250px' height='250px'><br><br>";
+                document.getElementById("status").innerHTML = "<img src='" + cdnimg + "' width='250px' height='250px'><br><br>";
                 document.getElementById("audioPlayer001").src = m;
                 var status1 = "";
                 var request1 = new XMLHttpRequest();
