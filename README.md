@@ -29,6 +29,7 @@
 * `nano app.py` Change port to 80, Secret and Redirect Link (optional)
 * `npm install forever -g`
 * `forever start -c python3 app.py` [Source](https://github.com/cyberboysumanjay/JioSaavnAPI/issues/17#issuecomment-696794077)
+* using AWS Lightsail Mumbai Region on `https://jiosaavnapi.bhadoo.uk` (Caching Active, available for Public use)
 
 ## Credits
 
