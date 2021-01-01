@@ -43,6 +43,13 @@
 * [Stackpath](https://stackpath.com) for their Free Bootstrap CDN.
 * [JSDelivr](https://jsdelivr.com) for their CDN.
 
+## Similar or Enhanced Functioning JioSaavn Downloaders
+
+* [Musify](https://github.com/Harsh-23/Musify/releases) - Android App
+* [@SongDl_Bot](https://telegram.dog/songdl_bot) - Telegram Bot
+* [Musicder.net](https://musicder.net) or [Musicder.tk](https://musicder.tk) - Website with enhanced features
+* [JioSaavn.com](https://jiosaavn.com) - Official JioSaavn Website
+
 ## Configured by
 
 * [TheFirstSpeedster](https://l.telegram.ind.in/TheFirstSpeedster)
