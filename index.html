@@ -1,54 +1,69 @@
 <html lang="us-en">
-   <head>
-      <script async src="https://arc.io/widget.min.js#Vxv9MvRT"></script>
-      <meta charset="utf-8">
-      <title>Bhadoo Music</title>
-      <link rel="manifest" href="/manifest.json"></link>
-      <meta name="theme-color" content="#ffffff">
-      <meta name="language" content="en">
-      <link rel="icon shortcut" type="image/x-icon" href="/images/favicon.png" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelementplayer.css" rel="stylesheet"/>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelement-and-player.min.js"></script>
-      <link rel="stylesheet" href="/css/style.css">
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104532450-8"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-104532450-8');</script> 
-   </head>
-   <body style="background: linear-gradient(-65deg, #43C6AC, #F8FFAE);">
-      <main>
-         <div class="container min-height">
-            <center><br><br><a href="/"><img src="/images/logo1x.png" alt="Bhadoo Music" width="208px"></a><br><br></center>
+
+<head>
+    <script async src="https://arc.io/widget.min.js#Vxv9MvRT"></script>
+    <meta charset="utf-8">
+    <title>Bhadoo Music</title>
+    <link rel="manifest" href="/manifest.json"></link>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="language" content="en">
+    <link rel="icon shortcut" type="image/x-icon" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelementplayer.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104532450-8"></script>
+    <script src="/js/api-config.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-104532450-8');
+    </script>
+</head>
+
+<body style="background: linear-gradient(-65deg, #43C6AC, #F8FFAE);">
+    <main>
+        <div class="container min-height">
+            <center><br><br>
+                <a href="/"><img src="/images/logo1x.png" alt="Bhadoo Music" width="208px"></a><br><br></center>
             <p id="status" class="center"></p>
             <div><audio id='audioPlayer001' controls style="max-width: 100%" style='width: 100%; max-width:600px;' loop> <source src='' type='audio/mp3'> Your browser does not support the audio element. </audio></div>
             <form id="switch" action="/">
-               <div id="input"></div>
+                <div id="input"></div>
             </form>
             <p id="download" class="center"></p>
             <div id="links" class="center"></div>
             <p class="center">Powered By <a href="https://l.telegram.ind.in/BhadooCloud">Bhadoo Cloud</a>
-            <p onclick="switchfunc()" class="center">This App is based on OSS, Read More</p>
-            <div id="footer">
-               <p class="center">The Site uses SumanJay JioSaavn API, both <a href="https://github.com/cyberboysumanjay/JioSaavnAPI">API</a> and this <a href="https://github.com/ParveenBhadooOfficial/Jio-Saavn-Downloader">Website</a> are Open Source Projects.<br>Brought to you by <a href="https://github.com/ParveenBhadooOfficial">Parveen Bhadoo</a>, Hosted by <a href="https://github.com">GitHub</a> and Deployed using <a href="https://netlify.com">Netlify</a>.</p>
-            </div>
-            <script src="/js/script.js"></script> 
-         </div>
-      </main>
-      <script type="text/javascript">
-         $('#audioPlayer001').mediaelementplayer();
-         document.getElementById('mep_0').style.display = "none";
-         function checkplayer() {
-         var hsk = document.getElementById('audioPlayer001').src;
-         var hs = document.getElementById('mep_0');
-         if (hsk.endsWith('.mp3') === true || hsk.endsWith('.mp4') === true){
-            hs.style.display = "block";
-             }
-         else {
-            hs.style.display = "none";
-         }
-         }
-         setTimeout(checkplayer, 5000);
-      </script>
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5edf8f288cd780a9"></script> 
-   </body>
+                <p onclick="switchfunc()" class="center">This App is based on OSS, Read More</p>
+                <div id="footer">
+                    <p class="center">The Site uses SumanJay JioSaavn API, both <a href="https://github.com/cyberboysumanjay/JioSaavnAPI">API</a> and this <a href="https://github.com/ParveenBhadooOfficial/Jio-Saavn-Downloader">Website</a> are Open Source Projects.<br>Brought
+                        to you by <a href="https://github.com/ParveenBhadooOfficial">Parveen Bhadoo</a>, Hosted by <a href="https://github.com">GitHub</a> and Deployed using <a href="https://netlify.com">Netlify</a>.</p>
+                </div>
+                <script src="/js/script.js"></script>
+        </div>
+    </main>
+    <script type="text/javascript">
+        $('#audioPlayer001').mediaelementplayer();
+        document.getElementById('mep_0').style.display = "none";
+
+        function checkplayer() {
+            var hsk = document.getElementById('audioPlayer001').src;
+            var hs = document.getElementById('mep_0');
+            if (hsk.endsWith('.mp3') === true || hsk.endsWith('.mp4') === true) {
+                hs.style.display = "block";
+            } else {
+                hs.style.display = "none";
+            }
+        }
+        setTimeout(checkplayer, 5000);
+    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5edf8f288cd780a9"></script>
+</body>
+
 </html>
