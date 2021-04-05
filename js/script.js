@@ -27,7 +27,7 @@ window.onload = async() => {
             let txt = ''
             txt += `<table class='table table-striped table-bordered'><caption style='caption-side:top;word-break:break-all;'>Results for : ${param}</caption><thead><tr><th scope='col'>Name</th><th scope='col'>Album</th></tr></thead><tbody>`
             get_data.forEach(song => {
-                txt += `<tr><td><a href='/?song=${song.url}'>${song.title} By ${song.more_info.primary_artists}</a></td><td>${song.album}</td></tr>`
+                txt += `<tr><td><a href='/?song=${song.url}'>${song.title} By ${song.more_info.primary_artists}</a></td><td><a href='/album/?id=${song.more_info.album_id}'>${song.album}</a></td></tr>`
             });
             txt += "</tbody></table>"
             document.getElementById("input").innerHTML = `<input type='text' id='srcid' name='song' placeholder='Enter Song Name or JioSaavn Link' onfocus='this.value=""' value='${param}' autocomplete='off' required><input type='submit' value='Search'>`
