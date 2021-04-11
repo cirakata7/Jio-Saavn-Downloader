@@ -13,7 +13,7 @@ window.onload = async() => {
 			document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'> <span class='input-group-text' id='addon-wrapping'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' onfocus='this.value=""' value='${get_data.song} By ${get_data.singers}' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
 			document.getElementById("download").innerHTML = `<table class='table table-striped'> <thead> <tr> <th scope='col'>Name</th> <td>${get_data.song}</td> </tr> </thead> <tbody> <tr> <th scope='row'>Singer</th> <td>${get_data.primary_artists}</td> </tr> <tr> <th scope='row'>Album</th> <td><a href='/album/?id=${get_data.albumid}'>${get_data.album}</a></td> </tr> <tr> <th scope='row'>Language</th> <td>${get_data.language}</td> </tr> <tr> <th scope='row'>Label</th> <td>${get_data.label}</td> </tr> </tbody> </table>`
 			document.getElementById("status").innerHTML = `<img src='${cdnimg}' width='250px' height='250px'><br><br>`;
-			document.getElementById("aplayer").src = get_data.media_url;
+			document.getElementById("aplayer").src = get_data.other_qualities[2].url;
 			document.getElementById("links").innerHTML = `<a href='${media_url}' class='btn btn-info' style='background-color:#2979FF' target='_self' download='${get_data.song} From ${get_data.album}.mp3'>Download Song</a>`;
 		}
 	} else if(param) {
