@@ -1,3 +1,3 @@
 const API_CONFIG = {
-    url: 'https://jiosaavn-api.vercel.app' // Don't give last slash ('/') https://github.com/cachecleanerjeet/jiosaavnapi
+    url: 'https://api.bhadoomusic.com' // Don't give last slash ('/') https://github.com/cachecleanerjeet/jiosaavnapi
 }
