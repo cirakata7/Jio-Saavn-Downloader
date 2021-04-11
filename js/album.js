@@ -9,13 +9,13 @@ window.onload = async() => {
             window.location = '../../'
         } else {
             let txt = '';
-            txt += `<h5>${get_data.title} (${get_data.year})</h5><table class='table table-striped table-bordered'><caption style='caption-side:top;word-break:break-all;'>Results for : ${get_data.title}</caption><thead><tr><th scope='col'>Song Name</th><th scope='col'>Singers</th></tr></thead><tbody>`
+            txt += `<div class="alert alert-danger" role="alert">${get_data.title} (${get_data.year})</div><table class='table table-striped table-bordered'><thead><tr><th scope='col'>Song Name</th><th scope='col'>Singers</th></tr></thead><tbody>`
             get_data.songs.forEach(song => {
                 txt += `<tr><td><a href='/?url=${song.perma_url}'>${song.song}</a></td><td>${song.primary_artists}</td></tr>`;
             });
             txt += "</tbody></table>"
             document.title = `${get_data.title} - Bhadoo Music`
-            document.getElementById("input").innerHTML = "<input type='text' id='srcid' name='song' placeholder='Enter Song Name or JioSaavn Link' value='' autocomplete='off' required><input type='submit' value='Search'>";
+            document.getElementById("input").innerHTML = "<br><div class='input-group input-group-lg'> <span class='input-group-text' id='inputGroup-sizing-default'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div><br>";
             document.getElementById("download").innerHTML = txt;
             document.getElementById("status").innerHTML = `<img src='${get_data.image.replace("https://", "https://i1.wp.com/")}' width='250px' height='250px'>`;
         }
@@ -24,3 +24,4 @@ window.onload = async() => {
         window.location = '../../'
     }
 }
+document.getElementById("year").innerHTML = new Date().getFullYear();

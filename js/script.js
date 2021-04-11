@@ -68,3 +68,4 @@ function switchfunc() {
         x.style.display = "block";
     }
 }
+document.getElementById("year").innerHTML = new Date().getFullYear();
