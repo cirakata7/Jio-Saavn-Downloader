@@ -11,7 +11,7 @@ window.onload = async() => {
             var cdnimg = get_data.image.replace("https://", "https://i1.wp.com/")
             var media_url = get_data.other_qualities[2].url.replace("https://", "/downloadapi/bhadoo/cloud/proxy/music/downloads/")
             document.title = `${get_data.song} By ${get_data.singers} - Bhadoo Music`
-            document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'> <span class='input-group-text' id='addon-wrapping'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' onfocus='this.value=""' value='${get_data.song} By ${get_data.singers}' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
+            document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'> <span class='input-group-text' id='addon-wrapping'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' onfocus='this.value=""' value='${get_data.song} By ${get_data.singers}' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
             document.getElementById("download").innerHTML = `<table class='table table-striped'> <thead> <tr> <th scope='col'>Name</th> <td>${get_data.song}</td> </tr> </thead> <tbody> <tr> <th scope='row'>Singer</th> <td>${get_data.primary_artists}</td> </tr> <tr> <th scope='row'>Album</th> <td><a href='/album/?id=${get_data.albumid}'>${get_data.album}</a></td> </tr> <tr> <th scope='row'>Language</th> <td>${get_data.language}</td> </tr> <tr> <th scope='row'>Label</th> <td>${get_data.label}</td> </tr> </tbody> </table>`
             document.getElementById("status").innerHTML = `<img src='${cdnimg}' width='250px' height='250px'><br><br>`;
             document.getElementById("aplayer").src = get_data.media_url;
@@ -30,7 +30,7 @@ window.onload = async() => {
                 txt += `<tr><td><a href='/?song=${song.url}'>${song.title} By ${song.more_info.primary_artists}</a></td><td><a href='/album/?id=${song.more_info.album_id}'>${song.album}</a></td></tr>`
             });
             txt += "</tbody></table>"
-            document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'> <span class='input-group-text' id='inputGroup-sizing-default'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' onfocus='this.value=""' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
+            document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'> <span class='input-group-text' id='inputGroup-sizing-default'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' onfocus='this.value=""' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
             document.getElementById("status").innerHTML = ''
             document.getElementById("download").innerHTML = txt;
         }
@@ -42,7 +42,7 @@ window.onload = async() => {
 
 
 function renderHome() {
-    document.getElementById("input").innerHTML = "<br><div class='input-group input-group-lg'> <span class='input-group-text' id='addon-wrapping'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>";
+    document.getElementById("input").innerHTML = "<br><div class='input-group input-group-lg'> <span class='input-group-text' id='addon-wrapping'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>";
     document.getElementById("status").innerHTML = "<p id='hourly'></p>";
     var hour = new Date().getHours();
     if (hour == "1" || hour == "6" || hour == "12" || hour == "18" || hour == "24") {
