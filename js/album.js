@@ -11,7 +11,7 @@ window.onload = async() => {
             let txt = '';
             txt += `<div class="alert alert-danger" role="alert">${get_data.title} (${get_data.year})</div><table class='table table-striped table-bordered'><thead><tr><th scope='col'>Song Name</th><th scope='col'>Singers</th></tr></thead><tbody>`
             get_data.songs.forEach(song => {
-                txt += `<tr><td><a href='/?url=${song.perma_url}'>${song.song}</a></td><td>${song.primary_artists}</td></tr>`;
+                txt += `<tr><td><a href='/?song=${song.perma_url}'>${song.song}</a></td><td>${song.primary_artists}</td></tr>`;
             });
             txt += "</tbody></table>"
             document.title = `${get_data.title} - Bhadoo Music`
