@@ -9,7 +9,7 @@ window.onload = async() => {
             renderHome()
         } else {
             var cdnimg = get_data.image.replace("https://", "https://i1.wp.com/")
-            class='input-group input-group-lg'var media_url = get_data.other_qualities[2].url.replace("https://", "/downloadapi/bhadoo/cloud/proxy/music/downloads/")
+            var media_url = get_data.other_qualities[2].url.replace("https://", "/downloadapi/bhadoo/cloud/proxy/music/downloads/")
             document.title = `${get_data.song} By ${get_data.singers} - Bhadoo Music`
             document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'> <span class='input-group-text' id='addon-wrapping'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' onfocus='this.value=""' value='${get_data.song} By ${get_data.singers}' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
             document.getElementById("download").innerHTML = `<table class='table table-striped'> <thead> <tr> <th scope='col'>Name</th> <td>${get_data.song}</td> </tr> </thead> <tbody> <tr> <th scope='row'>Singer</th> <td>${get_data.primary_artists}</td> </tr> <tr> <th scope='row'>Album</th> <td><a href='/album/?id=${get_data.albumid}'>${get_data.album}</a></td> </tr> <tr> <th scope='row'>Language</th> <td>${get_data.language}</td> </tr> <tr> <th scope='row'>Label</th> <td>${get_data.label}</td> </tr> </tbody> </table>`
