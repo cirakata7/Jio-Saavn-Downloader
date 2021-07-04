@@ -12,7 +12,7 @@ window.onload = async() => {
 			document.title = `${get_data.song} By ${get_data.singers} - nj7Music Music`
 			document.getElementById("input").innerHTML = `<div class='input-group input-group-lg'><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name' name='song' onfocus='this.value=""' value='${get_data.song} By ${get_data.singers}' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
 			document.getElementById("download").innerHTML = `<table class='table table-striped'> <thead> <tr> <th scope='col'>Name</th> <td>${get_data.song}</td> </tr> </thead> <tbody> <tr> <th scope='row'>Singer</th> <td>${get_data.primary_artists}</td> </tr> <tr> <th scope='row'>Album</th> <td>${get_data.album}</td> </tr> <tr> <th scope='row'>Language</th> <td>${get_data.language}</td> </tr> <tr> <th scope='row'>Label</th> <td>${get_data.label}</td> </tr> </tbody> </table>`
-			document.getElementById("status").innerHTML = `<br><img src='${cdnimg}' width='250px' height='250px'><br>`;
+			document.getElementById("status").innerHTML = `<br><img src='${cdnimg}' width='250px' height='250px'>`;
 			document.getElementById("aplayer").src = get_data.other_qualities[2].url;
 			document.getElementById("links").innerHTML = `<a href='${media_url}' class='btn btn-info' style='background-color:#2979FF' target='_self' download='${get_data.song} From ${get_data.album}.mp3'>Download Song</a>`;
 		}
@@ -29,7 +29,7 @@ window.onload = async() => {
 				txt += `<tr><td><a href='/?song=${song.url}'>${song.title} By ${song.more_info.primary_artists}</a></td><td>${song.album}</a></td></tr>`
 			});
 			txt += "</tbody></table>"
-			document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' onfocus='this.value=""' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
+			document.getElementById("input").innerHTML = `<div class='input-group input-group-lg'><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' onfocus='this.value=""' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
 			document.getElementById("status").innerHTML = ''
 			document.getElementById("download").innerHTML = txt;
 		}
