@@ -29,7 +29,7 @@ window.onload = async() => {
 				txt += `<tr><td><a href='/?song=${song.url}'>${song.title} By ${song.more_info.primary_artists}</a></td><td>${song.album}</a></td></tr>`
 			});
 			txt += "</tbody></table>"
-			document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'> <span class='input-group-text' id='inputGroup-sizing-default'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' onfocus='this.value=""' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
+			document.getElementById("input").innerHTML = `<br><div class='input-group input-group-lg'><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' onfocus='this.value=""' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>`
 			document.getElementById("status").innerHTML = ''
 			document.getElementById("download").innerHTML = txt;
 		}
