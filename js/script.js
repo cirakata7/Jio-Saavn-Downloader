@@ -48,7 +48,7 @@
             <div id="input"></div></form>
             <p id="download" class="center"></p><div id="links" class="center"></div><p class="center">
                 <p class="float-right"> <a href="#">Back to top</a> </p><b>Powered By  </b> 
-            <a href="https://nitishjeet7.tk" target="_blank">nitishjeet7</a><p onclick="switchfunc()" class="center2">Beta Version 3.0.1</p></a>
+            <a href="https://nitishjeet7.tk">nitishjeet7</a><p onclick="switchfunc()" class="center2">Beta Version 3.0.1</p></a>
 
 
 
