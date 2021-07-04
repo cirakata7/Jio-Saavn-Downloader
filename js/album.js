@@ -13,8 +13,8 @@ window.onload = async() => {
 				txt += `<tr><td><a href='/?song=${song.perma_url}'>${song.song}</a></td><td>${song.primary_artists}</td></tr>`;
 			});
 			txt += "</tbody></table>"
-			document.title = `${get_data.title} - nj7Music`
-			document.getElementById("input").innerHTML = "<br><div class='input-group input-group-lg'> <span class='input-group-text' id='inputGroup-sizing-default'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div><br>";
+			document.title = `${get_data.title} - Bhadoo Music`
+			document.getElementById("input").innerHTML = "<br><div class='input-group input-group-lg'><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div><br>";
 			document.getElementById("download").innerHTML = txt;
 			document.getElementById("status").innerHTML = `<img src='${get_data.image.replace("https://", "https://i1.wp.com/")}' width='250px' height='250px'>`;
 		}
