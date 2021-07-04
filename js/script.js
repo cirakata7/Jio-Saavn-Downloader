@@ -47,7 +47,7 @@ function renderHome() {
 	} else if(hour == "2" || hour == "7" || hour == "13" || hour == "19") {
 		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/wanga-kaaliyan/OzIYCARjQGA'><img src='images/banner.gif' width='250px' height='250px'>";
 	} else if(hour == "3" || hour == "8" || hour == "14" || hour == "20") {
-		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/koi-fariyaad-unplugged/FjpSXDVUdnE'><img src='images/banner.gif' width='250px' height='250px'>";
+		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/dil-banjara/ExI0VBZ5AlU'><img src='images/banner.gif' width='250px' height='250px'>";
 	} else if(hour == "4" || hour == "9" || hour == "15" || hour == "21") {
 		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/tu-hi-yaar-mera-from-pati-patni-aur-woh/JV8HCDpVRHs'><img src='images/banner.gif' width='250px' height='250px'>";
 	} else if(hour == "5" || hour == "10" || hour == "16" || hour == "22") {
