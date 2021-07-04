@@ -39,7 +39,7 @@ window.onload = async() => {
 }
 
 function renderHome() {
-	document.getElementById("input").innerHTML = "<div class='input-group input-group-lg'> <span class='input-group-text' id='addon-wrapping'>Song Name</span><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>";
+	document.getElementById("input").innerHTML = "<div class='input-group input-group-lg'><input id='srcid' type='text' class='form-control' placeholder='Enter Song Name or JioSaavn Link' name='song' value='' autocomplete='off' required aria-describedby='addon-wrapping'><input type='submit' class='btn btn-light' value='Search'></div>";
 	document.getElementById("status").innerHTML = "<p id='hourly'></p>";
 	var hour = new Date().getHours();
 	if(hour == "1" || hour == "6" || hour == "12" || hour == "18" || hour == "24") {
