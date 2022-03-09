@@ -43,17 +43,17 @@ function renderHome() {
 	document.getElementById("status").innerHTML = "<p id='hourly'></p>";
 	var hour = new Date().getHours();
 	if(hour == "1" || hour == "6" || hour == "12" || hour == "18" || hour == "24") {
-		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/dil-banjara/ExI0VBZ5AlU'><img src='images/banner.gif' width='250px' height='250px'>";
+		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/dil-banjara/ExI0VBZ5AlU'><img src='https://c.saavncdn.com/914/Dil-Banjara-English-2020-20210102182805-500x500.jpg' width='250px' height='250px'>";
 	} else if(hour == "2" || hour == "7" || hour == "13" || hour == "19") {
-		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/oh-kshnam-navvune-visuru/CltfYE1HfUk'><img src='images/banner.gif' width='250px' height='250px'>";
+		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/oh-kshnam-navvune-visuru/CltfYE1HfUk'><img src='https://c.saavncdn.com/086/Oh-Kshnam-Navvune-Visuru-Telugu-2021-20210115221608-500x500.jpg' width='250px' height='250px'>";
 	} else if(hour == "3" || hour == "8" || hour == "14" || hour == "20") {
-		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/we-are-gods/CjcEXTJ3ems'><img src='images/banner.gif' width='250px' height='250px'>";
+		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/we-are-gods/CjcEXTJ3ems'><img src='https://c.saavncdn.com/858/We-Are-Gods-English-2020-20200309202843-500x500.jpg' width='250px' height='250px'>";
 	} else if(hour == "4" || hour == "9" || hour == "15" || hour == "21") {
-		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/tu-hi-yaar-mera-from-pati-patni-aur-woh/JV8HCDpVRHs'><img src='images/banner.gif' width='250px' height='250px'>";
+		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/tu-hi-yaar-mera-from-pati-patni-aur-woh/JV8HCDpVRHs'><img src='https://c.saavncdn.com/258/Tu-Hi-Yaar-Mera-From-Pati-Patni-Aur-Woh--Hindi-2019-20191202231535-500x500.jpg' width='250px' height='250px'>";
 	} else if(hour == "5" || hour == "10" || hour == "16" || hour == "22") {
-		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/senorita/I1sPdgJoZFE'><img src='images/banner.gif' width='250px' height='250px'>";
+		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/senorita/I1sPdgJoZFE'><img src='https://c.saavncdn.com/624/Se-orita-English-2019-20190822022326-500x500.jpg' width='250px' height='250px'>";
 	} else {
-		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/maragatha-maalai/Gws,XQcIVWI'><img src='images/banner.gif' width='250px' height='250px'>";
+		document.getElementById("hourly").innerHTML = "<br><a href='/?song=https://www.jiosaavn.com/song/maragatha-maalai/Gws,XQcIVWI'><img src='https://c.saavncdn.com/790/Takkar-Tamil-2020-20200227122849-500x500.jpg' width='250px' height='250px'>";
 	}
 }
 
